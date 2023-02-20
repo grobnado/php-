@@ -3,7 +3,7 @@ class Card
 {
     
     public $reg, $reg2, $luna, $space;
-    function __construct($reg =  '/^5[1-5][0-9]{10}|6[27][0-9]{10}$/u', $reg2 = '/^4[1-9][0-9]{10}|14[0-9]{10}$/u', $luna = 0,  $space = '/\\s/u'){
+    function __construct($reg =  '/^5[1-5][0-9]{10}|6[27][0-9]{10}$/u', $reg2 = '/^4[0-9][0-9]{10}|14[0-9]{10}$/u', $luna = 0,  $space = '/\\s/u'){
      $this->reg = $reg;
      $this->reg2 = $reg2 ;
      $this->luna = $luna;
