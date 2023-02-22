@@ -10,7 +10,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $card = new Card();
    
-
     $card->validate($_POST['number']);
     
    
