@@ -10,9 +10,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $card = new Card();
    
-    global $number;
-    $number = $_POST['number'];
-    $card->validate($number);
+
+    $card->validate($_POST['number']);
     
    
 }
